@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>query 메서드</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="text">text11111</div>
+      <div class="text">text22222</div>
+    </div>
+    <div class="box2">
+      <div class="text">text33333</div>
+      <div class="text">text44444</div>
+    </div>
+    <script>
+      var qu1 = document.querySelector(".box1");
+      console.log(qu1);
+      var qu2 = document.querySelector(".box2");
+      console.log(qu2);
+      var quA = document.querySelectorAll(".box1 .text");
+      console.log(quA);
+      var getC = document.getElementsByClassName("box1")[0].children;
+      console.log(getC);
+    </script>
+  </body>
+</html>

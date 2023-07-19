@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>메서드 가져오기</title>
+    <style>
+      .change {
+        color: blue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.naver.com">네이버</a>
+    <script>
+      var aEl = document.querySelector("a");
+      // console.log(aEl);
+      var href = aEl.getAttribute("href");
+      // console.log(href);
+      aEl.setAttribute("href", "http://www.google.com");
+      // console.log(aEl);
+      aEl.innerText = "구글";
+      aEl.setAttribute("target", "_blank");
+      aEl.setAttribute("class", "change");
+      console.log(aEl.className);
+      aEl.setAttribute("data-a", "daum");
+      // console.log(aEl.dataset);
+      aEl.removeAttribute("class");
+    </script>
+  </body>
+</html>

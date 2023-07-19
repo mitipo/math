@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM 이벤트 객체2</title>
+    <style>
+      #container {
+        width: 200px;
+        margin: 30px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="images/girl.jpg" alt="소녀" id="cover" />
+    </div>
+    <script>
+      var cover = document.querySelector("#cover");
+      cover.addEventListener("mouseover", changePic, false);
+      cover.addEventListener("mouseout", originPic, false);
+      function changePic() {
+        cover.src = "images/boy.jpg";
+      }
+      function originPic() {
+        cover.src = "images/girl.jpg";
+      }
+    </script>
+  </body>
+</html>
